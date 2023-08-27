@@ -4,10 +4,12 @@ import AnujPhoto from "../assest/anuj photo.jpg"
 const Home = () => {
     return(
         <div>
-            <div className="flex">
-               <div>
-                  hello jeeeeeeeeeeeeeeee
-               </div>
+            <div className="flex items-center justify-around bg-red-500 ">
+                <div>
+                    <h1>Hello I'm</h1>
+                    <h1>ANUJ BHALADHARE</h1>
+                    <h1>FULL-STACK WEB-DEVLOPER</h1>
+                </div>
                <div>
                   <img src={AnujPhoto} />
                </div>

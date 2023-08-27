@@ -5,7 +5,10 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center p-4 bg-gray-900">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-white font-bold text-xl">Logo</div>
+        <div className="text-white font-bold text-xl">
+            <Link to="/">
+                Logo
+            </Link></div>
           <ul className="hidden md:flex space-x-4">
             <li>
               <Link to="/" className="text-white hover:text-blue-300">
