@@ -6,6 +6,7 @@ import Contact from "./components/Contact.js";
 import Home from "./components/Home.js";
 import Page from "./components/Page.js";
 import Project from "./components/Projects.js";
+import Footer from "./components/Footer.js";
 import './App.css';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/page" element={<Page />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }
