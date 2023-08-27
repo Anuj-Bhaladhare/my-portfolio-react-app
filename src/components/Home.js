@@ -1,24 +1,36 @@
 import React from "react";
-import AnujPhoto from "../assest/anuj photo.jpg"
+import AnujPhoto from "../assest/anuj photo.jpg";
+import About from "./About";
+import Contact from "./Contact";
+import Page from "./Page";
+import Projects from "./Projects";
 
 const Home = () => {
     return(
         <div>
-            <div className="flex items-center justify-around bg-red-500 ">
-                <div>
-                    <h1>Hello I'm</h1>
+            <div className="flex flex-col items-center justify-around bg-red-500 sm:flex-row">
+                <div className="text-center sm:text-left">
+                    <h1>Hello, I'm</h1>
                     <h1>ANUJ BHALADHARE</h1>
-                    <h1>FULL-STACK WEB-DEVLOPER</h1>
+                    <h1>FULL-STACK WEB DEVELOPER</h1>
                 </div>
-               <div>
-                  <img src={AnujPhoto} />
-               </div>
+                <div className="mt-4 sm:mt-0">
+                    <img src={AnujPhoto} alt="Anuj Bhaladhare" />
+                </div>
             </div>
 
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+            <div>
+                <About />
+            </div>
+            <div>
+               <Projects />
+            </div>
+            <div>
+               <Contact />
+            </div>
+            <div>
+                <Page />
+            </div>
         </div>
     )
 }
