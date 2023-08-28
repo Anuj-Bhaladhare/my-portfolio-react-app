@@ -1,37 +1,38 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../assest/logo.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center p-4 bg-gray-900">
+    <nav className="flex justify-between items-center p-4">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-white font-bold text-xl">
             <Link to="/">
-                Logo
+                <img className="h-[90px]" src={Logo}/>
             </Link></div>
           <ul className="hidden md:flex space-x-4">
             <li>
-              <Link to="/" className="text-white hover:text-blue-300">
+              <Link to="/" className="text-[#004AAD] font-bold hover:text-[#2BB4D4]">
                 Home
               </Link>
             </li>
             <li>
-              <Link to="/project" className="text-white hover:text-blue-300">
+              <Link to="/project" className="text-[#004AAD] font-bold hover:text-[#2BB4D4]">
                 Projects
               </Link>
             </li>
             <li>
-              <Link to="/about" className="text-white hover:text-blue-300">
+              <Link to="/about" className="text-[#004AAD] font-bold hover:text-[#2BB4D4]">
                 About
               </Link>
             </li>
             <li>
-              <Link to="/page" className="text-white hover:text-blue-300">
+              <Link to="/page" className="text-[#004AAD] font-bold hover:text-[#2BB4D4]">
                 Page
               </Link>
             </li>
             <li>
-              <Link to="/contact" className="text-white hover:text-blue-300">
+              <Link to="/contact" className="text-[#004AAD] font-bold hover:text-[#2BB4D4]">
                 Contact
               </Link>
             </li>
