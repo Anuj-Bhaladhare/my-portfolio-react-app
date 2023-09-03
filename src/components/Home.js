@@ -1,5 +1,5 @@
 import React from "react";
-import AnujPhoto from "../assest/anuj-removing-bg-img.png";
+import frameImage from "../assest/frame-image.png";
 // import About from "./About";
 // import Contact from "./Contact";
 // import Page from "./Page";
@@ -14,8 +14,8 @@ const Home = () => {
                     <h1 className="text-[#2E2E2E]">ANUJ BHALADHARE</h1>
                     <h1 className="text-[#004AAD]">FULL-STACK WEB DEVELOPER</h1>
                 </div>
-                <div className="mt-4 sm:mt-0">
-                    <img src={AnujPhoto} alt="Anuj Bhaladhare" />
+                <div className="mt-4 sm:mt-0 container mx-auto p-4">
+                    <img src={frameImage} className="max-w-full h-auto" alt="Anuj Bhaladhare" />
                 </div>
             </div>
         </div>
