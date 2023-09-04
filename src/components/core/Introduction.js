@@ -1,7 +1,7 @@
 import React from "react";
-import frameImage from "../assest/frame-image.png";
+import frameImage from "../../assest/frame-image.png";
 
-const Home = () => {
+const Introduction = () => {
   return (
     <div>
       <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-around">
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Introduction;
