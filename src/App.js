@@ -1,22 +1,22 @@
-import React from "react";
-import "./App.css";
-import About from "./components/pages/About";
-// import Projects from "./components/pages/Projects";
-import Footer from "./components/Footer";
-import Navbar from "./components/Navbaar";
-import Introduction from "./components/pages/Introduction";
-import Contact from "./components/pages/Contact";
+import React from 'react';
+import NavBaar from './components/Navbaar';
+import Header from './components/Header';
+import About from './components/about-me/index';
+import Projects from './components/Projects';
+import Contact from './components/contact-me/index';
+import Footer from './components/Footer';
 
-function App() {
+const App = () => {
   return (
-      <div>
-        <Navbar />
-        <Introduction />
-        <About />
-        <Contact />
-        <Footer />
-      </div>
+    <>
+      <NavBaar />
+      <Header />
+      <About />
+      <Projects />
+      <Contact />
+      <Footer />
+    </>
   );
-}
+};
 
 export default App;
