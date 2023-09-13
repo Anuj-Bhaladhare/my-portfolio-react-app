@@ -1,42 +1,11 @@
 import React from 'react';
+import MySkill from './MySkill';
 
 const index = () => {
     return (
         <div>
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
-            <p>this About</p>    
+            <MySkill /> 
+            1111111111111111
         </div>
     );
 }
