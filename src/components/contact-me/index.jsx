@@ -1,37 +1,10 @@
 import React from 'react';
+import SendMessage from './SendMessage';
 
 const index = () => {
     return (
         <div>
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
-             <p>Contact</p>  
+           <SendMessage /> 
         </div>
     );
 }

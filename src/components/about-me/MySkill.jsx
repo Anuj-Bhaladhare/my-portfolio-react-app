@@ -96,44 +96,50 @@ const ToolsSkills = [
 
 const MySkill = () => {
     return (
-        <div>
+        <div className='flex flex-col justify-center items-center text-center'>
             <h1>MY SKILL</h1>
-            <div>
+            <div className='flex flex-col justify-center'>
 
                 <div>
                     <p>WEB DEVELOPMENT</p>
-                    {
-                        webDevlopment.map((image, index) => (
-                            <div key={index}>
-                                <img className='h-5' src={image.icon} alt={`Skill ${index}`} />
-                                <p>{image.name}</p>
-                            </div>
-                        ))
-                    }  
+                    <div className='flex flex-wrap justify-center items-center text-center'>
+                        {
+                            webDevlopment.map((image, index) => (
+                                <div key={index}>
+                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                    <p>{image.name}</p>
+                                </div>
+                            ))
+                        }
+                    </div>  
                 </div>
 
                 <div>
                     <p>LANGUAGES</p>
-                    {
-                        languageSkill.map((image, index) => (
-                            <div key={index}>
-                                <img className='h-5' src={image.icon} alt={`Skill ${index}`} />
-                                <p>{image.name}</p>
-                            </div>
-                        ))
-                    }  
+                    <div className='flex flex-wrap justify-center items-center text-center'>
+                        {
+                            languageSkill.map((image, index) => (
+                                <div key={index}>
+                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                    <p>{image.name}</p>
+                                </div>
+                            ))
+                        }  
+                    </div>
                 </div>
 
                 <div>
                     <p>TOOLS</p>
-                    {
-                        ToolsSkills.map((image, index) => (
-                            <div key={index}>
-                                <img className='h-5' src={image.icon} alt={`Skill ${index}`} />
-                                <p>{image.name}</p>
-                            </div>
-                        ))
-                    }  
+                    <div className='flex flex-wrap justify-center items-center text-center'>
+                        {
+                            ToolsSkills.map((image, index) => (
+                                <div key={index}>
+                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                    <p>{image.name}</p>
+                                </div>
+                            ))
+                        } 
+                    </div>   
                 </div>
 
             </div>

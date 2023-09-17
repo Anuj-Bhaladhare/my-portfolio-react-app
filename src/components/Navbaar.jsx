@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Logo from '../assest/logo.png'; // Corrected asset path
+import Logo from "../assest/heder-image/logo.png"; // Corrected asset path
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavBar = () => {
@@ -31,7 +31,7 @@ const NavBar = () => {
                 </Link>
               </li>
               <li>
-                <Link to="#about" elementId='' smooth className="text-lg hover:text-gray-400">
+                <Link to="#about" smooth className="text-lg hover:text-gray-400">
                   About
                 </Link>
               </li>

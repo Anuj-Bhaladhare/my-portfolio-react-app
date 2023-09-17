@@ -1,11 +1,11 @@
 import React from 'react';
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { MdAttachEmail } from "react-icons/md";
-import FrameImage from "../assest/frame-image.png";
+import FrameImage from "../assest/heder-image/important.svg";
 
 const Header = () => {
     return (
-        <div className="flex flex-col sm:flex-row">
+        <div className="p-2 flex flex-col sm:flex-row">
             {/* Section 1 */}
             <div className="p-4 sm:p-8 lg:p-16">
                 <p className="text-gray-500 text-sm">Hello, It's me</p>
@@ -26,8 +26,8 @@ const Header = () => {
             </div>
 
             {/* Section 2 */}
-            <div className="mt-4 sm:mt-0">
-                <img src={FrameImage} alt="FrameImage" className="w-full" />
+            <div className="mt-4 p-2 pt-10 sm:mt-0">
+                <img src={FrameImage} alt="FrameImage" className="w-[90%]" />
             </div>
         </div>
     );
