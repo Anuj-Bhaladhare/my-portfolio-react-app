@@ -16,7 +16,7 @@ const index = () => {
             </div>
 
             <div className='mt-10'>  
-                <div className='font-bold text-[1.5rem] mb-5 ml-9'>Education</div>    
+                <div className='font-bold text-[1.5rem] mb-5 ml-20'>Education</div>    
                 <Education />
             </div>
         </div>

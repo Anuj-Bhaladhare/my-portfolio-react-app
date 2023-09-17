@@ -10,7 +10,7 @@ import "./App.css";
 
 const App = () => {
   return(
-    <div className='bg-[#f2f2fe]'>
+    <div className='bg-[#f2f2fe] overflow-x-hidden'>
       <Navbar /> 
       <Header />
       <About />
