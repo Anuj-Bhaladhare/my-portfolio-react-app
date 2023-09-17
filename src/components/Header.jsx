@@ -1,9 +1,8 @@
 import React from 'react';
-// import { BsGithub, BsLinkedin } from "react-icons/bs";
-// import { MdAttachEmail } from "react-icons/md";
 import FrameImage from "../assest/heder-image/important.svg";
 
 const Header = () => {
+
     return (
         <div className="p-2 flex flex-col justify-between sm:flex-row w-[100%] pt-10 pb-10 header-gradiant">
             {/* Section 1 */}
@@ -13,15 +12,11 @@ const Header = () => {
                 <p className="text-[#212121] font-bold text-lg mt-2">Full Stack Developer Web Developer</p>
                 <p className="text-blue-900 text-lg mt-4">Hello! I'm a MERN Stack Developer, passionate about coding and always eager to dive into new and emerging technologies, embracing innovation and continuous learning.</p>
 
-                {/* <div className="flex flex-row gap-10 mt-7">
-                    <BsGithub className="text-3xl text-gray-600 hover:text-gray-900 cursor-pointer" />
-                    <BsLinkedin className="text-3xl text-blue-600 hover:text-blue-900 cursor-pointer" />
-                    <MdAttachEmail className="text-4xl text-red-500 hover:text-red-600 cursor-pointer" />
-                </div> */}
-
                 <div className="mt-8 space-x-4">
                     <button className="bg-blue-700 hover:bg-blue-900 text-white py-2 px-4 border border-blue-500 rounded-md">Let's Talk</button>
-                    <button className="bg-gray-700 hover:bg-gray-900 text-white py-2 px-4 border border-blue-500 rounded-md">Download CV</button>
+                    <a href='https://drive.google.com/file/d/1t8iKPcx3Wwxx0Tsj0-RFYgJnEIgq302Z/view?usp=sharing'>
+                        <button className="bg-gray-700 hover:bg-gray-900 text-white py-2 px-4 border border-blue-500 rounded-md">Download CV</button>
+                    </a>
                 </div>
             </div>
 

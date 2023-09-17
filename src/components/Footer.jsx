@@ -1,39 +1,21 @@
 import React from "react";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { MdAttachEmail } from "react-icons/md";
 
 const Footer = () => {
     return (
-        <div className="flex flex-col md:flex-row items-center justify-around p-4 bg-gray-900 text-white">
-            <div className="mb-4 md:mb-0">
-                <h3 className="text-xl font-semibold">Our Company</h3>
-                <ul className="list-disc list-inside">
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                </ul>
-            </div>
-
-            <div className="mb-4 md:mb-0">
-                <h3 className="text-xl font-semibold">Our Products</h3>
-                <ul className="list-disc list-inside">
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                </ul>
-            </div>
-
+        <div className="bg-black text-white flex flex-col justify-center items-center mx-auto text-center pt-10 pb-5">
             <div>
-                <h3 className="text-xl font-semibold">Contact Us</h3>
-                <ul className="list-disc list-inside">
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                    <li>aaaaaaaaa</li>
-                </ul>
+                <h4 className="font-bold text-[2rem]">Anuj Bhaladhare</h4>
+            </div>
+            <div className="flex flex-row gap-10 mt-7 mb-10">
+                <BsGithub className="text-3xl text-gray-600 hover:text-gray-900 cursor-pointer" />
+                <BsLinkedin className="text-3xl text-blue-600 hover:text-blue-900 cursor-pointer" />
+                <MdAttachEmail className="text-4xl text-red-500 hover:text-red-600 cursor-pointer" />
+            </div>
+            <div>
+                <hr className="w-[50rem]"></hr>
+                <p className="mt-4">Copyright © Anuj Bhaladhare 2023.</p>
             </div>
         </div>
     );
