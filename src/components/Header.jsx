@@ -14,7 +14,7 @@ const Header = () => {
 
                 <div className="mt-8 space-x-4">
                     <button className="bg-blue-700 hover:bg-blue-900 text-white py-2 px-4 border border-blue-500 rounded-md">Let's Talk</button>
-                    <a href='https://drive.google.com/file/d/1t8iKPcx3Wwxx0Tsj0-RFYgJnEIgq302Z/view?usp=sharing'>
+                    <a href='https://drive.google.com/file/d/1mqh9JvZUbBMVHU1DnIuFkrmeiqBTHdHX/view?usp=sharing'>
                         <button className="bg-gray-700 hover:bg-gray-900 text-white py-2 px-4 border border-blue-500 rounded-md">Download CV</button>
                     </a>
                 </div>
