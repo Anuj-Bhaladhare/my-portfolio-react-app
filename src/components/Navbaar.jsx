@@ -1,15 +1,15 @@
 import React from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import Logo from "../assest/heder-image/logo.png"; // Corrected asset path
+import Logo from '../assest/heder-image/logo.png'; // Corrected asset path
 import { HashLink as Link } from 'react-router-hash-link';
 
 const NavBar = () => {
   return (
     <BrowserRouter>
-      <nav className="bg-gray-800 text-white p-4">
+      <nav className="p-4 header-gradiant">
         <div className="container mx-auto flex justify-between items-center">
           <Link to="#home" smooth className="flex items-center">
-            <img src={Logo} className="h-10" alt="satyam" />
+            <img src={Logo} className="h-14" alt="satyam" />
           </Link>
           <button
             className="lg:hidden navbar-toggler focus:outline-none"

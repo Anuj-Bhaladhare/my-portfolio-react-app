@@ -97,51 +97,65 @@ const ToolsSkills = [
 const MySkill = () => {
     return (
         <div className='flex flex-col justify-center items-center text-center'>
-            <h1>MY SKILL</h1>
-            <div className='flex flex-col justify-center'>
+            <div className='flex flex-col gap-20 justify-center'>
+                <div className='flex flex-row'>
+                    <div className="flex flex-row border-r-4 border-blue-500 items-center justify-center mx-auto pr-5 font-bold">
+                       <div><p>W</p><p>E</p><p>B</p></div>
+                       <p>-</p>
+                       <div><p>D</p><p>E</p><p>V</p></div>
+                    </div>
 
-                <div>
-                    <p>WEB DEVELOPMENT</p>
                     <div className='flex flex-wrap justify-center items-center text-center'>
                         {
                             webDevlopment.map((image, index) => (
-                                <div key={index}>
-                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
-                                    <p>{image.name}</p>
+                                <div key={index} className='bg-white flex flex-row m-3 p-2 rounded-md cursor-pointer hover:border hover:border-sky-500'>
+                                    <a href={image.link}>
+                                        <img className='h-10 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                        <p>{image.name}</p>         
+                                    </a>
                                 </div>
                             ))
                         }
                     </div>  
                 </div>
 
-                <div>
-                    <p>LANGUAGES</p>
-                    <div className='flex flex-wrap justify-center items-center text-center'>
-                        {
-                            languageSkill.map((image, index) => (
-                                <div key={index}>
-                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
-                                    <p>{image.name}</p>
-                                </div>
-                            ))
-                        }  
+                <div className='flex flex-row gap-16'>
+                    <div className='flex flex-row ml-5'>
+                        <div className="flex flex-col border-r-4 border-blue-500 items-center justify-center mx-auto pr-5 font-bold">
+                           <p>L</p><p>A</p><p>N</p><p>G</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center text-center'>
+                            {
+                                languageSkill.map((image, index) => (
+                                    <div key={index} className='bg-white flex flex-row m-3 p-2 rounded-md cursor-pointer hover:border hover:border-sky-500'>
+                                        <a href={image.link}>
+                                            <img className='h-10 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                            <p>{image.name}</p>
+                                        </a>
+                                    </div>
+                                ))
+                            }  
+                        </div>
+                    </div>
+
+                    <div className='flex flex-row'>
+                        <div className="flex flex-col border-r-4 border-blue-500 items-center justify-center mx-auto pr-5 font-bold">
+                            <p>T</p><p>O</p><p>O</p><p>L</p><p>S</p>
+                        </div>
+                        <div className='flex flex-wrap justify-center items-center text-center'>
+                            {
+                                ToolsSkills.map((image, index) => (
+                                    <div key={index} className='bg-white flex flex-row m-3 p-2 rounded-md cursor-pointer hover:border hover:border-sky-500'>
+                                        <a href={image.link}>
+                                            <img className='h-10 m-8' src={image.icon} alt={`Skill ${index}`} />
+                                            <p>{image.name}</p>
+                                        </a>
+                                    </div>
+                                ))
+                            } 
+                        </div>   
                     </div>
                 </div>
-
-                <div>
-                    <p>TOOLS</p>
-                    <div className='flex flex-wrap justify-center items-center text-center'>
-                        {
-                            ToolsSkills.map((image, index) => (
-                                <div key={index}>
-                                    <img className='h-16 m-8' src={image.icon} alt={`Skill ${index}`} />
-                                    <p>{image.name}</p>
-                                </div>
-                            ))
-                        } 
-                    </div>   
-                </div>
-
             </div>
         </div>
     );

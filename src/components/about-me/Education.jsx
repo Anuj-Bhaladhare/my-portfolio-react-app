@@ -3,8 +3,6 @@ import React from 'react';
 const Education = () => {
     return (
         <div>
-            <h1>GET KNOW TO ME</h1>  
-            <div>line</div>
             
             {/* Education */}
             <div>
